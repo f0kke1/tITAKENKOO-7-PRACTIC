@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID-X | Магазин ігрових аксесуарів</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="shop-wrapper">
+        <header>
+            <h1>GRID-X <span class="accent">Cyber Hub</span></h1>
+            <p>Управління асортиментом товарів</p>
+        </header>
+        
+        <div class="control-panel">
+            <div class="input-group">
+                <input type="text" id="productInput" oninput="liveSearch()" placeholder="Введіть назву для пошуку або додавання...">
+                <button class="btn-add" onclick="addProduct()">Додати</button>
+            </div>
+            <p class="hint">* Пошук працює автоматично при введенні тексту</p>
+        </div>
+
+        <div class="inventory">
+            <div class="inventory-header">
+                <h2>Список товарів</h2>
+                <span id="itemCount">Всього: 0</span>
+            </div>
+            <ul id="productList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

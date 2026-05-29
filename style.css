@@ -1,0 +1,87 @@
+:root {
+    --bg-dark: #0f111a;
+    --card-bg: #1a1d29;
+    --accent: #00d2ff;
+    --danger: #ff4b2b;
+    --success: #28a745;
+    --text: #e0e0e0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.shop-wrapper {
+    width: 100%;
+    max-width: 600px;
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+}
+
+header { text-align: center; margin-bottom: 25px; }
+.accent { color: var(--accent); text-transform: uppercase; font-weight: bold; }
+
+.control-panel { margin-bottom: 30px; }
+.input-group { display: flex; gap: 10px; }
+
+input {
+    flex: 1;
+    padding: 12px;
+    background: #0f111a;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+}
+input:focus { border-color: var(--accent); }
+
+.hint { font-size: 0.75rem; color: #666; margin-top: 8px; }
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btn-add { background: var(--accent); color: #000; }
+.btn-add:hover { background: #00b8e6; transform: scale(1.05); }
+
+.inventory-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+ul { list-style: none; padding: 0; }
+
+li {
+    background: #252936;
+    margin-bottom: 8px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bought-text { text-decoration: line-through; color: #666; }
+
+.actions { display: flex; gap: 8px; }
+.btn-buy { background: var(--success); color: white; }
+.btn-del { background: var(--danger); color: white; }
+button:hover { opacity: 0.8; }
